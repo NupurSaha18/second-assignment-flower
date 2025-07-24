@@ -22,6 +22,19 @@
 
 }
 
+.section-title{
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.section-description{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+    
+}
+
 /* navbar related styles */
 .navbar{
     display: flex;
@@ -60,6 +73,7 @@
 .banner{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 
 .banner-title{
@@ -77,6 +91,21 @@
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
  
+}
+
+/* our plants section */
+.plants-card-title{
+  text-align: center;
+  margin: 49px;
+}
+
+.plants-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.plants-card img{
+  width: 100%;
 }
 
 

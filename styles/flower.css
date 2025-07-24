@@ -19,17 +19,21 @@
     padding: 0;
     margin: auto;
     box-sizing: border-box;
+
 }
 
 /* navbar related styles */
 .navbar{
     display: flex;
+    gap: 509px;
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 120px;
+    align-items: center;
+   
 }
 
-.nav-items{
+.nav-items, .nav-item{
     display: flex;
     gap: 48px;
     align-items: center;
@@ -53,7 +57,68 @@
 
 
 /* banner related styles */
-/* .banner{
+.banner{
   display: flex;
+  justify-content: space-between;
+}
+
+.banner-title{
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 89px;
+}
+
+#fresh-flower{
+  color: rgb(233, 90, 8);
+}
+
+.banner-description{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+ 
+}
+
+
+
+/* responsive styles */
+
+@media screen and (max-width: 576px) {
   
-} */
+  *{
+    margin: 0px;
+    width: 100%;
+  }
+
+  /* navbar related */
+  .navbar{
+    gap: 200px;
+    margin: 10px 10px;
+  }
+  .nav-item{
+    display: none;
+  }
+  
+
+  /* banner related */
+  .banner{
+    flex-direction: column;
+    margin: 10px 10px;
+    width: 100%;
+  }
+
+  .banner-right{
+    order: 1;
+    width: 100%;
+    /* margin: 0px; */
+  }
+  
+  .banner-left{
+    order: 2;
+    margin: 5px
+  }
+
+  
+
+
+}

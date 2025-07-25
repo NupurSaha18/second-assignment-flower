@@ -121,6 +121,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-align: center;
+  margin-bottom: 212px;
 }
 
 .plants-item{
@@ -153,17 +154,27 @@
   font-size: 16px;
 }
 
+/* plants lover related styles */
+.plants-lover{
+  display: flex;
+  gap: 60px;
+  margin-bottom: 134px;
+}
+
+.plants-lover-left img{
+  width: 100%;
+}
+
+.plants-lover-right{
+  max-width: 540px;
+  max-height: 520px; 
+}
 
 
 /* responsive styles */
 
 @media screen and (max-width: 576px) {
   
-  *{
-    margin: 0px;
-    /* width: 100%; */
-  }
-
   /* navbar related */
   .navbar{
     gap: 200px;
@@ -201,5 +212,10 @@
      margin: 0 10px;
     }
 
+    .plants-lover{
+      flex-direction: column;
+      gap: 18px;
+      margin: 41px 10px;
+    }
 
 }

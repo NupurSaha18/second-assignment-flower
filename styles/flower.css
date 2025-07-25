@@ -5,7 +5,7 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
+    "width" 100;
 }
 
 .inter-normal {
@@ -40,17 +40,16 @@
     display: flex;
     gap: 509px;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 120px;
     align-items: center;
-   
+    margin-top: 30px;
+    margin-bottom: 120px; 
 }
 
 .nav-items, .nav-item{
     display: flex;
     gap: 48px;
     align-items: center;
-    
+  
 }
 
 .nav-item1{
@@ -73,7 +72,12 @@
 .banner{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 120px;
+}
+
+.banner img{
+  width: 100%;
 }
 
 .banner-title{
@@ -96,16 +100,57 @@
 /* our plants section */
 .plants-card-title{
   text-align: center;
-  margin: 49px;
+  margin: 49px 0;
+  align-items: center;
 }
 
-.plants-card{
+.plants-card-container-1{
+  /* display: flex;
+  flex-wrap: wrap; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  align-items: center;
 }
 
-.plants-card img{
+.plants-card-container-2{
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.plants-item{
+    align-items: center;
+    justify-content: center;
+}
+
+.plants-item img{
   width: 100%;
+}
+
+.plant-name{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.price{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.btn{
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(233, 90, 8);
+  padding: 25px 80px;
+  border: none;
+  margin: 30px 0;
+  font-size: 16px;
 }
 
 
@@ -116,7 +161,7 @@
   
   *{
     margin: 0px;
-    width: 100%;
+    /* width: 100%; */
   }
 
   /* navbar related */
@@ -139,7 +184,6 @@
   .banner-right{
     order: 1;
     width: 100%;
-    /* margin: 0px; */
   }
   
   .banner-left{
@@ -147,7 +191,15 @@
     margin: 5px
   }
 
-  
+  /* our plants section */
+    .plants-card-container-1{
+     grid-template-columns: repeat(2,1fr);
+     margin: 0 10px;
+    }
+    .plants-card-container-2{
+     grid-template-columns: repeat(2,1fr);
+     margin: 0 10px;
+    }
 
 
 }
